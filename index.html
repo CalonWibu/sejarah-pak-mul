@@ -1,1 +1,331 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Holtwood+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        background-color: rgb(114, 114, 114);
+    }
+    body::-webkit-scrollbar {
+        display: none; 
+        overflow: hidden;
+    }
+    nav{
+        margin-top: 20px;
+        z-index: 1;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+        font-family: black ops one;
+        font-size: 30px;
+    }
+
+    ul {
+        
+        display: flex;
+        flex-direction: row;
+    }
+
+    li {
+        list-style: none;
+        margin: 10px;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+    }
+    .main-page {
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background: linear-gradient(
+    to bottom left, /* Arah gradien dari atas ke bawah */
+    #171B1F 0%, /* Warna pojok kiri atas */
+    #2a3d53 50%, /* Warna tengah */
+    #0A1A29 100% /* Warna pojok kiri bawah */
+  );
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+    }
+
+    .judul {
+        color: white;
+        font-family: "Holtwood One SC", serif;
+        font-size: 40px;
+    }
+    
+    .batang {
+        background-color: white;
+        z-index: 10;
+        margin-top: 9px;
+        width: 100px;
+        margin-left: -20px;
+        height: 15px;
+        margin-bottom: -42px;
+    }
+
+    .judul-perang {
+        margin-left: 90px;
+    }
+
+    .judul-pattimura {
+        margin-top: -10px;
+    }
+
+    .main-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .main-text p {
+        width: 400px;
+        margin-top: 10px;
+        color: white;
+        margin-left: -20px;
+    }
+
+    .main-text button {
+        background: linear-gradient(
+    to bottom right, /* Gradien dari pojok kiri atas ke pojok kanan bawah */
+    #E0474C, /* Warna awal di pojok kiri atas */
+    #3B6CE6 /* Warna akhir di pojok kanan bawah */
+  );
+        color: rgb(255, 255, 255);
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        border: none;
+        margin-left: -20px;
+        font-size: 15px;
+        padding: 15px;
+        border-radius: 15px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: background 1s ease;
+    }
+
+    .main-text button:hover {
+        transition: background 1s ease;
+        background: #E0474C; /* Warna merah mendominasi hingga 90% */
+
+    }
+
+    /* sec page */
+
+    .sec-page {
+        z-index: -1;
+        height: 200vh;
+        width: 100%;
+        position: absolute;
+        top: 100vh;
+        background: linear-gradient(
+    to top right, /* Arah gradien dari kiri bawah ke kanan atas */
+    #271113 25%, /* Warna pada posisi 25% */
+    #5D0003 38%, /* Warna pada posisi 38% */
+    #260457 44%, /* Warna pada posisi 44% */
+    #0A0553 50%, /* Warna pada posisi 50% */
+    #171B1F 75%, /* Warna pada posisi 75% */
+    #171B1F 88%, /* Warna pada posisi 88% */
+    #171B1F 100% /* Warna pada posisi 100% */
+  );
+    }
+
+    .pahlawan-tittle {
+        color: white;
+        font-family: "Holtwood One SC", serif;
+        font-size: 40px;
+        margin-top: 30px;
+    }
+
+.pahlawan-card-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    .pahlawan-card {
+        margin: 5px;
+        height: 220px;
+        padding: 10px 10px 10px 10px;        
+        border-radius: 20px;
+        margin-bottom: 20px;
+        background-color: #050018;
+    }
+    .pahlawan-id {
+        display: flex;
+        flex-direction: row;
+    }
+
+.pahlawan-card .pahlawan-img {
+    width: 108px;
+    height: 130px;
+    border-radius: 20px;
+}
+
+.pahlawan-img img {
+    width: 100px;
+}
+.pahlawan-card .pahlawan-text {
+    color: white;
+    margin-left: 10px;
+    width: 140px;
+    text-align: left;
+}
+
+.pahlawan-text h2 {
+    font-family: "Holtwood One SC", serif;
+}
+
+.pahlawan-card button {
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    width: 96%;
+    margin-top: 10px;
+    height: 35px;
+    background: linear-gradient(to right, #DD53FF, #280032);
+}
+</style>
+<body>
+    <nav>
+        <div class="logo">LALY</div>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pahlawan</a></li>
+            <li><a href="#">Sejarah</a></li>
+        </ul>
+        <a href="https://saweria.co/CalonWibu" style="text-decoration: none; color: white;">Donate</a>
+    </nav>
+
+    <div class="main-page">
+        <div class="main-text">
+            <h2 class="judul">sejarah</h2>
+            <div class="batang"></div>
+            <h2 class="judul judul-perang">perang</h2>
+            <h2 class="judul judul-pattimura">pattimura</h2>
+            <p>Pada 1817, Pattimura memimpin rakyat Maluku melawan Belanda akibat monopoli rempah-rempah, kerja paksa, dan penindasan.</p>
+            <button>Selengkapnya</button>
+        </div>
+        <img src="asset/main-pattimura.png" class="main-img">
+    </div>
+    <div class="sec-page">
+            <center>
+                <h2 class="pahlawan-tittle">pahlawan</h2>
+            </center>
+            <center>
+                <div class="pahlawan-card-container">
+                    <div class="pahlawan-card">
+                        <div class="pahlawan-id">
+                        <img src="asset/thomas.jpg" class="pahlawan-img">
+                        <div class="pahlawan-text">
+                            <h3 class="pahlawan-name">Thomas Matulessy</h3>
+                            <p>Lahir di Maluku tahun 1783, Thomas berasal dari ....</p>
+                        </div>
+                    </div>
+                        <button>Selengkapnya</button>
+                        </div>
+                        <div class="pahlawan-card">
+                            <div class="pahlawan-id">
+                            <img src="asset/christina.png" class="pahlawan-img">
+                            <div class="pahlawan-text">
+                                <h3 class="pahlawan-name">Martha Christina tiahahu</h3>
+                                <p>Lahir di Nusa Laut pada 4 Januari ....</p>
+                            </div>
+                        </div>
+                            <button>Selengkapnya</button>
+                            </div>
+                            <div class="pahlawan-card">
+                                <div class="pahlawan-id">
+                                    <div class="pahlawan-img" style="background-color: white;">
+                                        <img src="asset/entitas-takdikenal.png">
+                                    </div>
+                                <div class="pahlawan-text">
+                                    <h3 class="pahlawan-name">Paulus Tiahahu</h3>
+                                    <p>Paulus adalah tokoh penting dari Nusa Laut yang .....</p>
+                                </div>
+                            </div>
+                                <button>Selengkapnya</button>
+                                </div>
+                                <div class="pahlawan-card">
+                                    <div class="pahlawan-id">
+                                        <div class="pahlawan-img" style="background-color: white;">
+                                            <img src="asset/entitas-takdikenal.png">
+                                        </div>
+                                    <div class="pahlawan-text">
+                                        <h3 class="pahlawan-name">Philip Latumahina</h3>
+                                        <p>Philip adalah tokoh lokal yang memiliki keahlian ..... </p>
+                                    </div>
+                                </div>
+                                    <button>Selengkapnya</button>
+                                    </div>
+                                    <div class="pahlawan-card">
+                                        <div class="pahlawan-id">
+                                            <div class="pahlawan-img" style="background-color: white;">
+                                                <img src="asset/entitas-takdikenal.png">
+                                            </div>
+                                        <div class="pahlawan-text">
+                                            <h3 class="pahlawan-name">Anthony Reebok</h3>
+                                            <p>Anthony adalah seorang pejuang yang berperan .....</p>
+                                        </div>
+                                    </div>
+                                        <button>Selengkapnya</button>
+                                        </div>
+                                        <div class="pahlawan-card">
+                                            <div class="pahlawan-id">
+                                                <div class="pahlawan-img" style="background-color: white;">
+                                                    <img src="asset/entitas-takdikenal.png">
+                                                </div>
+                                            <div class="pahlawan-text">
+                                                <h3 class="pahlawan-name">Lucas Latumahina</h3>
+                                                <p>Lucas adalah salah satu pejuang yang turut serta ....</p>
+                                            </div>
+                                        </div>
+                                            <button>Selengkapnya</button>
+                                            </div>
+                                            <div class="pahlawan-card">
+                                                <div class="pahlawan-id">
+                                                    <div class="pahlawan-img" style="background-color: white;">
+                                                        <img src="asset/entitas-takdikenal.png">
+                                                    </div>
+                                                <div class="pahlawan-text">
+                                                    <h3 class="pahlawan-name">Said Perintah</h3>
+                                                    <p>Said adalah salah satu tokoh Muslim yang mendukung perjuangan ....</p>
+                                                </div>
+                                            </div>
+                                                <button>Selengkapnya</button>
+                                                </div>
+                               
+                </div>
+            </center>
+    </div>
+
+</body>
+</html>

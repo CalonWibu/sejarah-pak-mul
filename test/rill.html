@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animasi Ketika Terlihat dan Mengulang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 200vh; /* Untuk membuat halaman lebih panjang */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .box {
+      width: 300px;
+      height: 100px;
+      background-color: lightblue;
+      margin-top: 200px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .box.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Scroll Down</h1>
+    <div class="box">Saya akan muncul dengan animasi!</div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const box = document.querySelector('.box');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Tambahkan kelas 'visible' saat elemen terlihat
+            box.classList.add('visible');
+          } else {
+            // Hapus kelas 'visible' saat elemen tidak terlihat
+            box.classList.remove('visible');
+          }
+        });
+      });
+
+      observer.observe(box);
+    });
+  </script>
+</body>
+</html>
