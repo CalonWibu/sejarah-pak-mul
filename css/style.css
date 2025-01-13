@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(114, 114, 114);
+}
+body::-webkit-scrollbar {
+    display: none; 
+    overflow: hidden;
+}
+nav{
+    margin-top: 20px;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-family: black ops one;
+    font-size: 30px;
+}
+
+ul {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+.main-page {
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(
+to bottom left, /* Arah gradien dari atas ke bawah */
+#171B1F 0%, /* Warna pojok kiri atas */
+#2a3d53 50%, /* Warna tengah */
+#0A1A29 100% /* Warna pojok kiri bawah */
+);
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+.judul {
+    color: white;
+    font-family: "Holtwood One SC", serif;
+    font-size: 40px;
+}
+
+.batang {
+    background-color: white;
+    z-index: 10;
+    margin-top: 9px;
+    width: 100px;
+    margin-left: -20px;
+    height: 15px;
+    margin-bottom: -42px;
+}
+
+.judul-perang {
+    margin-left: 90px;
+}
+
+.judul-pattimura {
+    margin-top: -10px;
+}
+
+.main-img {
+    width: 400px;
+    height: 400px;
+}
+
+.main-text p {
+    width: 400px;
+    margin-top: 10px;
+    color: white;
+    margin-left: -20px;
+}
+
+.main-text button {
+    background: linear-gradient(
+to bottom right, /* Gradien dari pojok kiri atas ke pojok kanan bawah */
+#E0474C, /* Warna awal di pojok kiri atas */
+#3B6CE6 /* Warna akhir di pojok kanan bawah */
+);
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    border: none;
+    margin-left: -20px;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 1s ease;
+}
+
+.main-text button:hover {
+    transition: background 1s ease;
+    background: #E0474C; /* Warna merah mendominasi hingga 90% */
+
+}
+
+/* sec page */
+
+.sec-page {
+    z-index: -1;
+    height: 180vh;
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+    background: linear-gradient(
+to top right, /* Arah gradien dari kiri bawah ke kanan atas */
+#271113 25%, /* Warna pada posisi 25% */
+#5D0003 38%, /* Warna pada posisi 38% */
+#260457 44%, /* Warna pada posisi 44% */
+#0A0553 50%, /* Warna pada posisi 50% */
+#171B1F 75%, /* Warna pada posisi 75% */
+#171B1F 88%, /* Warna pada posisi 88% */
+#171B1F 100% /* Warna pada posisi 100% */
+);
+}
+
+.pahlawan-tittle {
+    color: white;
+    font-family: "Holtwood One SC", serif;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.pahlawan-card-container {
+margin-top: 50px;
+display: flex;
+flex-direction: row;
+width: 90%;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.pahlawan-card {
+    margin: 5px;
+    height: 220px;
+    padding: 10px 10px 10px 10px;        
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: #050018;
+}
+.pahlawan-id {
+    display: flex;
+    flex-direction: row;
+}
+
+.pahlawan-card .pahlawan-img {
+width: 108px;
+height: 130px;
+border-radius: 20px;
+}
+
+.pahlawan-img img {
+width: 100px;
+}
+.pahlawan-card .pahlawan-text {
+color: white;
+margin-left: 10px;
+width: 140px;
+text-align: left;
+}
+
+.pahlawan-text h2 {
+font-family: "Holtwood One SC", serif;
+}
+
+.pahlawan-card button {
+color: white;
+font-family: "Poppins", serif;
+font-weight: 600;
+font-size: 17px;
+border: none;
+border-radius: 10px;
+width: 96%;
+margin-top: 10px;
+height: 35px;
+background: linear-gradient(to right, #DD53FF, #280032);
+}
+
+.riwayat-kematian-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+    background: none;
+    margin-top: 50px;
+}
+
+.riwayat-kematian-container .riwayat-text {
+    color: white;
+    text-align: left;
+}
+
+.riwayat-kematian-container .riwayat-text h2 {
+    font-family: holtwood one sc;
+    margin-bottom: -20px;
+    font-size: 40px;
+}
+
+.riwayat-kematian-container .riwayat-text p {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: -20px;
+}
+
+.riwayat-kematian-container img {
+    width: 300px;
+}
+
+.border-1 {
+    position: relative; /* Harus relative agar ::before bekerja */
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+    background: none; /* Warna isi elemen */
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.border-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px; /* Radius untuk border gradient */
+    background: linear-gradient(to right bottom, #CD4B5D, #7B5DA9, #1A222B, #4968D8); /* Gradient */
+    z-index: -1; /* Membuat elemen pseudo di belakang */
+    padding: 5px; /* Ketebalan border */
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0); /* Mask untuk isi */
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.border-2 {
+    position: relative; /* Harus relative agar ::before bekerja */
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    background: none; /* Warna isi elemen */
+    margin-top: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.border-2 h2 {
+    color: white;
+}
+
+.border-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px; /* Radius untuk border gradient */
+    background: linear-gradient(to right bottom, #CD4B5D, #7B5DA9, #1A222B, #4968D8); /* Gradient */
+    z-index: -1; /* Membuat elemen pseudo di belakang */
+    padding: 5px; /* Ketebalan border */
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0); /* Mask untuk isi */
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+/* third page */
+
+.third-page {
+    z-index: -1;
+    height: 200vh;
+    width: 100%;
+    position: absolute;
+    top: 280vh;
+    background: linear-gradient(
+to top right, /* Arah gradien dari kiri bawah ke kanan atas */
+ #1B0000,
+ #810000,
+ #4E0000
+);
+}
+
+.materi-container-1 {
+    color: white;
+    font-family: "Holtwood One SC", serif;
+    font-size: 40px;
+    margin-top: 30px;
+    z-index: 2;
+}

@@ -6,214 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Holtwood+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-    }
-    body{
-        background-color: rgb(114, 114, 114);
-    }
-    body::-webkit-scrollbar {
-        display: none; 
-        overflow: hidden;
-    }
-    nav{
-        margin-top: 20px;
-        z-index: 1;
-        color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .logo {
-        font-family: black ops one;
-        font-size: 30px;
-    }
-
-    ul {
-        
-        display: flex;
-        flex-direction: row;
-    }
-
-    li {
-        list-style: none;
-        margin: 10px;
-    }
-
-    li a {
-        color: white;
-        text-decoration: none;
-    }
-    .main-page {
-        z-index: -1;
-        height: 100vh;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        background: linear-gradient(
-    to bottom left, /* Arah gradien dari atas ke bawah */
-    #171B1F 0%, /* Warna pojok kiri atas */
-    #2a3d53 50%, /* Warna tengah */
-    #0A1A29 100% /* Warna pojok kiri bawah */
-  );
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-    }
-
-    .judul {
-        color: white;
-        font-family: "Holtwood One SC", serif;
-        font-size: 40px;
-    }
-    
-    .batang {
-        background-color: white;
-        z-index: 10;
-        margin-top: 9px;
-        width: 100px;
-        margin-left: -20px;
-        height: 15px;
-        margin-bottom: -42px;
-    }
-
-    .judul-perang {
-        margin-left: 90px;
-    }
-
-    .judul-pattimura {
-        margin-top: -10px;
-    }
-
-    .main-img {
-        width: 400px;
-        height: 400px;
-    }
-
-    .main-text p {
-        width: 400px;
-        margin-top: 10px;
-        color: white;
-        margin-left: -20px;
-    }
-
-    .main-text button {
-        background: linear-gradient(
-    to bottom right, /* Gradien dari pojok kiri atas ke pojok kanan bawah */
-    #E0474C, /* Warna awal di pojok kiri atas */
-    #3B6CE6 /* Warna akhir di pojok kanan bawah */
-  );
-        color: rgb(255, 255, 255);
-        font-family: "Poppins", serif;
-        font-weight: 600;
-        border: none;
-        margin-left: -20px;
-        font-size: 15px;
-        padding: 15px;
-        border-radius: 15px;
-        margin-top: 10px;
-        cursor: pointer;
-        transition: background 1s ease;
-    }
-
-    .main-text button:hover {
-        transition: background 1s ease;
-        background: #E0474C; /* Warna merah mendominasi hingga 90% */
-
-    }
-
-    /* sec page */
-
-    .sec-page {
-        z-index: -1;
-        height: 200vh;
-        width: 100%;
-        position: absolute;
-        top: 100vh;
-        background: linear-gradient(
-    to top right, /* Arah gradien dari kiri bawah ke kanan atas */
-    #271113 25%, /* Warna pada posisi 25% */
-    #5D0003 38%, /* Warna pada posisi 38% */
-    #260457 44%, /* Warna pada posisi 44% */
-    #0A0553 50%, /* Warna pada posisi 50% */
-    #171B1F 75%, /* Warna pada posisi 75% */
-    #171B1F 88%, /* Warna pada posisi 88% */
-    #171B1F 100% /* Warna pada posisi 100% */
-  );
-    }
-
-    .pahlawan-tittle {
-        color: white;
-        font-family: "Holtwood One SC", serif;
-        font-size: 40px;
-        margin-top: 30px;
-    }
-
-.pahlawan-card-container {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-    .pahlawan-card {
-        margin: 5px;
-        height: 220px;
-        padding: 10px 10px 10px 10px;        
-        border-radius: 20px;
-        margin-bottom: 20px;
-        background-color: #050018;
-    }
-    .pahlawan-id {
-        display: flex;
-        flex-direction: row;
-    }
-
-.pahlawan-card .pahlawan-img {
-    width: 108px;
-    height: 130px;
-    border-radius: 20px;
-}
-
-.pahlawan-img img {
-    width: 100px;
-}
-.pahlawan-card .pahlawan-text {
-    color: white;
-    margin-left: 10px;
-    width: 140px;
-    text-align: left;
-}
-
-.pahlawan-text h2 {
-    font-family: "Holtwood One SC", serif;
-}
-
-.pahlawan-card button {
-    color: white;
-    font-family: "Poppins", serif;
-    font-weight: 600;
-    font-size: 17px;
-    border: none;
-    border-radius: 10px;
-    width: 96%;
-    margin-top: 10px;
-    height: 35px;
-    background: linear-gradient(to right, #DD53FF, #280032);
-}
-</style>
 <body>
     <nav>
         <div class="logo">LALY</div>
@@ -325,7 +120,29 @@
                                
                 </div>
             </center>
+        <center>
+            <div class="riwayat-kematian-container">
+                <div class="riwayat-text">
+                    <h2>RIWAYAT</h2>
+                    <p>Kematian</p>
+                <img src="asset/tandapanah.png">
+                </div>
+                <div class="border-1"></div>
+                <div class="border-2">
+                    <h2 style="font-size: 50px; margin-top: 30px;"><span class="judul" style="font-size: 25px;">BELANDA</span><br>70</h2>
+                </div>
+                <div class="border-2">
+                    <h2 style="font-size: 20px; margin-top: 60px;"><span class="judul" style="font-size: 25px;">MALUKU</span><br>Tidak<br>tercatat</h2>
+                </div>
+            </div>
+        </center>
     </div>
 
+    <div class="third-page">
+        <div class="materi-container-1">
+            <h2 class="judul">PERANG<br>PATTIMURA</h2>
+            
+        </div>
+    </div>
 </body>
 </html>
