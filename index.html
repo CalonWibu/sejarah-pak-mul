@@ -7,15 +7,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Holtwood+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Sejarah Perang Pattimura</title>
 </head>
-<body>
-    <nav>
+<body id="body">
+    <h1 class="hp">Maaf Admin Sedang Malas Membuat versi hp</h1>
+    <div class="function-latarbelakang" id="latar-belakang">
+        <center>
+            <div class="container-latarbelakang">
+                <h2>LATAR BELAKANG</h2>
+                <i class="bi bi-x-lg" style="cursor: pointer;" onclick="closelatarbelakang()"></i>
+               <div class="scroller">
+                <p>Maluku, yang dikenal sebagai "mutiara dari timur," telah lama menjadi incaran bangsa Eropa karena kekayaan rempah-rempahnya. Sejak abad ke-16, bangsa Portugis, Spanyol, Inggris, dan Belanda berlomba-lomba menguasai wilayah ini. Kedatangan bangsa Eropa tidak hanya membawa perubahan dalam perdagangan tetapi juga berdampak besar pada kehidupan masyarakat Maluku.
+                    <br><br><br>
+                    Pada awal abad ke-19, Inggris sempat menguasai Maluku di bawah kepemimpinan Thomas Stamford Raffles (1810–1817). Selama masa ini, rakyat Maluku mengalami sedikit kelonggaran. Inggris mengurangi kerja paksa, memberikan kompensasi atas hasil bumi, dan memberi pemuda Maluku kesempatan untuk bekerja di dinas militer mereka. Namun, situasi berubah drastis pada tahun 1817 ketika Belanda kembali mengambil alih Maluku setelah penandatanganan Konvensi London (1814).
+                    <br><br><br>
+                    Di bawah pemerintahan Belanda, rakyat Maluku menghadapi penindasan yang lebih berat. Belanda memberlakukan monopoli dagang yang ketat, memaksa rakyat menjual hasil panen seperti rempah-rempah, kopi, dan garam dengan harga rendah, sambil membebankan pajak yang berat. Selain itu, kerja paksa diperluas hingga mencakup produksi garam dan pengelolaan kebun. Penindasan ini tidak hanya terbatas pada aspek ekonomi tetapi juga menyentuh kehidupan sosial dan keagamaan masyarakat.
+                    <br><br><br>
+                    Jumlah pendeta dikurangi oleh pemerintah kolonial, menghambat masyarakat Maluku dalam menjalankan ibadah. Sementara itu, hasil panen yang diambil tanpa pembayaran yang adil memicu protes rakyat. Pada tahun 1817, insiden besar terjadi di Saparua ketika Residen Van den Berg menolak membayar perahu yang dijual oleh masyarakat setempat. Penolakan ini, ditambah sikap arogan dan sewenang-wenang, memicu kemarahan besar di kalangan rakyat.
+                    <br><br><br>
+                    Belanda semakin memperkuat kendali mereka dengan mendirikan banyak benteng di wilayah Maluku. Namun, tindakan ini justru meningkatkan kebencian rakyat terhadap pemerintah kolonial. Penindasan ekonomi, sosial, dan agama yang berkepanjangan akhirnya mencapai puncaknya dengan perlawanan yang dipimpin oleh Thomas Matulessy, atau Pattimura, pada Mei 1817. Perang Pattimura menjadi simbol perjuangan rakyat Maluku melawan dominasi kolonial untuk merebut kembali kebebasan dan hak mereka.</p>
+               </div>
+            </div>
+        </center>
+    </div>
+    <nav id="home">
         <div class="logo">LALY</div>
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Pahlawan</a></li>
-            <li><a href="#">Sejarah</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pahlawan">Pahlawan</a></li>
+            <li><a href="#sejarah">Sejarah</a></li>
         </ul>
         <a href="https://saweria.co/CalonWibu" style="text-decoration: none; color: white;">Donate</a>
     </nav>
@@ -27,16 +48,16 @@
             <h2 class="judul judul-perang">perang</h2>
             <h2 class="judul judul-pattimura">pattimura</h2>
             <p>Pada 1817, Pattimura memimpin rakyat Maluku melawan Belanda akibat monopoli rempah-rempah, kerja paksa, dan penindasan.</p>
-            <button>Selengkapnya</button>
+            <button onclick="latarbelakang()">Selengkapnya</button>
         </div>
         <img src="asset/main-pattimura.png" class="main-img">
     </div>
-    <div class="sec-page">
+    <div class="sec-page" id="pahlawan">
             <center>
                 <h2 class="pahlawan-tittle">pahlawan</h2>
             </center>
             <center>
-                <div class="pahlawan-card-container">
+                <div class="pahlawan-card-container" >
                     <div class="pahlawan-card">
                         <div class="pahlawan-id">
                         <img src="asset/thomas.jpg" class="pahlawan-img">
@@ -45,7 +66,7 @@
                             <p>Lahir di Maluku tahun 1783, Thomas berasal dari ....</p>
                         </div>
                     </div>
-                        <button>Selengkapnya</button>
+                        <button onclick="window.location.href='test/ol.html';">Selengkapnya</button>
                         </div>
                         <div class="pahlawan-card">
                             <div class="pahlawan-id">
@@ -138,11 +159,128 @@
         </center>
     </div>
 
-    <div class="third-page">
+    <div class="third-page" id="sejarah">
+       <center>
         <div class="materi-container-1">
             <h2 class="judul">PERANG<br>PATTIMURA</h2>
-            
+            <img src="asset/patung.png" alt="patung">
+            <h3>THOMAS<br>MATULESSY</h3>
+            <p>Perang ini dipimpin oleh Thomas Matulessy (Pattimura) bersama tokoh-tokoh lain seperti Christina Martha Tiahahu, Paulus Tiahahu, dan Philip Latumahina.</p>
         </div>
+       </center>
+       <center>
+        <div class="materi-container-2">
+            <h2 class="judul">Penyebab Perang</h2>
+            <p>Belanda memaksakan monopoli perdagangan, menghapuskan hak-hak adat, dan memberlakukan kerja paksa yang sangat membebani masyarakat. Ditambah dengan pajak yang tinggi serta perlakuan tidak adil terhadap penduduk lokal, ketidakpuasan rakyat semakin memuncak. Kondisi ini menjadi pemicu utama terjadinya perlawanan besar yang dipimpin oleh Thomas Matulessy, atau yang lebih dikenal sebagai Pattimura, pada tahun 1817.</p>
+        </div>
+       </center>
+       <div class="penyebab-container">
+        <div class="penyebab-card">
+            <img src="asset/monopoli.png" alt="monopoli">
+            <p>Monopoli Perdagangan Rempah-rempah</p>
+            <button>Selengkapnya</button>
+        </div>
+        <div class="penyebab-card">
+            <img src="asset/monopoli.png" alt="monopoli">
+            <p>Monopoli Perdagangan Rempah-rempah</p>
+            <button>Selengkapnya</button>
+        </div>
+        <div class="penyebab-card">
+            <img src="asset/monopoli.png" alt="monopoli">
+            <p>Monopoli Perdagangan Rempah-rempah</p>
+            <button>Selengkapnya</button>
+        </div>
+        <div class="penyebab-card">
+            <img src="asset/monopoli.png" alt="monopoli">
+            <p>Monopoli Perdagangan Rempah-rempah</p>
+            <button>Selengkapnya</button>
+        </div>
+       </div>
+        <div class="materi-container-3">
+            <h2 class="judul">Jalannya Perang</h2>
+           </div>
+           
+
+           <center>
+            <div class="materi-container-4">
+                <h2>Pemimpin Perang</h2>
+                <p>Perang ini dipimpin oleh Thomas Matulessy (Pattimura) bersama tokoh-tokoh lain seperti Christina Martha Tiahahu, Paulus Tiahahu, dan Philip Latumahina.</p>
+           </div>
+           <div class="materi-container-4">
+            <h2>Penyerangan Benteng Duurstede</h2>
+            <p>Pada 16 Mei 1817, Pattimura dan pasukannya berhasil merebut Benteng Duurstede di Saparua. Peristiwa ini menjadi awal dari perlawanan besar terhadap Belanda.</p>
+       </div>
+       <div class="materi-container-4">
+        <h2>Perlawanan Rakyat Maluku</h2>
+        <p>Perang berlangsung sengit di berbagai wilayah Maluku. Masyarakat bahu-membahu melawan pasukan Belanda meskipun dengan persenjataan yang terbatas.</p>
+   </div>
+   <div class="materi-container-4">
+    <h2>Kekalahan di Akhir Perang</h2>
+    <p>Pada akhir 1817, Belanda mengirimkan pasukan besar-besaran untuk memadamkan perlawanan. Pattimura akhirnya ditangkap pada 11 November 1817 di Pulau Seram.</p>
+</div>
+           </center>
     </div>
+    <div class="fourth-page">
+        <center>
+            <div class="batassss">
+                <div class="materi-container-3 bawahhh">
+                    <h2 class="judul">Deskripsi Singkat</h2>
+                   </div>
+                <p class="judull">Kronologi Perlawanan</p>
+                <ol class="tulisannya">
+                    <li>16 Mei 1817: Pattimura dan pasukannya menyerang dan merebut Benteng Duurstede di Saparua. Komandan Belanda, Van den Berg, tewas dalam serangan ini.</li>
+                    <li>Perlawanan Meluas: Perlawanan menyebar ke berbagai wilayah di Maluku, termasuk Pulau Seram dan Ambon.</li>
+                    <li>Balasan Belanda: Belanda mengirim pasukan besar-besaran dari Batavia untuk merebut kembali Benteng Duurstede.</li>
+                </ol>
+                <p class="judull">Strategi Perlawanan</p>
+                <ol class="tulisannya">
+                    <li>Gerilya: Pattimura menggunakan taktik gerilya, memanfaatkan pengetahuan lokal untuk menyerang pasukan Belanda secara mendadak.</li>
+                    <li>Benteng Duurstede sebagai Basis: Benteng ini dijadikan pusat perlawanan untuk mengkoordinasikan serangan.</li>
+                </ol>
+                <p class="judull">Hasil Perlawanan</p>
+                <ol class="tulisannya">
+                    <li>Pattimura dan pasukannya sempat meraih kemenangan awal, tetapi akhirnya kalah karena kekuatan militer Belanda yang jauh lebih besar.</li>
+                    <li>Pattimura ditangkap pada 11 November 1817 dan dihukum mati pada 16 Desember 1817.</li>
+                </ol>
+            </div>
+        </center>
+    </div>
+    <div class="fifth-page">
+        <center>
+            <img src="asset/diplomasi.png" alt="diplomasi">
+            <div class="container-diplomasi">
+                <h2 class="judul">Diplomasi</h2>
+                <center>
+                    <div>
+                        <p class="materi-container-4">Negosiasi Awal Sebelum perang meluas, Pattimura dan tokoh-tokoh Maluku sempat mengajukan protes kepada Belanda untuk menghentikan kebijakan yang menindas. Namun, protes ini diabaikan.</p>
+                        <p class="materi-container-4">Belanda Menggunakan Propaganda, Belanda berupaya memecah belah rakyat Maluku dengan menyebarkan propaganda untuk menarik dukungan dari sebagian tokoh lokal.</p>
+                        <p class="materi-container-4">Perang Pattimura dimulai dengan keberhasilan rakyat Maluku merebut Benteng Duurstede pada 16 Mei 1817. Dipimpin oleh Thomas Matulessy, perlawanan ini melibatkan tokoh-tokoh seperti Christina Martha Tiahahu dan Paulus Tiahahu. Strategi gerilya digunakan untuk melawan pasukan Belanda yang lebih kuat. Namun, Belanda akhirnya berhasil memadamkan perlawanan dengan mengirim pasukan besar-besaran. Setelah ditangkap, Pattimura dihukum mati, tetapi perjuangannya menjadi simbol nasionalisme Indonesia.</p>
+                    </div>
+                </center>
+            </div>
+        </center>
+    </div>
+    <footer>
+        <h3>Buatan Sepenuh Hati ❤️</h3>
+        <h2><span style="font-family: poppins; font-size: 15px; font-weight: 400; margin-right: 10px;">sponsor by </span><span style="font-weight: 400; font-family: black ops one;">LALY</span></h2>
+    </footer>
+
+    <script>
+        let latarrbelakang = document.getElementById("latar-belakang");
+        let bodys = document.getElementById("body");
+        function latarbelakang() {
+            latarrbelakang.style.display = "block";
+            bodys.style.overflow = "hidden";
+        }
+
+        function closelatarbelakang() {
+            latarrbelakang.style.display = "none";
+            bodys.style.overflowY = "scroll";
+        }
+    </script>
 </body>
 </html>
+
+
+
+
